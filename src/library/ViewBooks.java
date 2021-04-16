@@ -58,7 +58,7 @@ public class ViewBooks {
         f.add(lSearchBy);
         lSearchBy.setBounds(220, 10, 150, 40);
         
-        String category[] = {"Book Name", "Publisher Name", "Stock"};
+        String category[] = {"Book Name", "Publisher Name", "Published Date"};
         JComboBox jcSearchBy = new JComboBox(category);
         f.add(jcSearchBy);
         jcSearchBy.setBounds(280, 15, 100, 30);
@@ -79,6 +79,7 @@ public class ViewBooks {
         f.add(lsortby);
         lsortby.setBounds(220, 50, 100, 30);
         
+//        String category1[] = {"Book Name", "Publisher Name", "Stock"};
         JComboBox jcSortBy = new JComboBox(category);
         f.add(jcSortBy);
         jcSortBy.setBounds(280, 55, 100, 30);
@@ -146,8 +147,8 @@ public class ViewBooks {
             case "Publisher Name":
                 index = 2;
                 break;
-            case "Stock":
-                index = 5;
+            case "Published Date":
+                index = 3;
                 break;
             }
             String search_value = tfsearchVal.getText();
@@ -368,27 +369,27 @@ public class ViewBooks {
 	                                        
 	                lquantity = new JLabel("Quantity");
 	                f.add(lquantity);
-	                lquantity.setBounds(50, 610, 150, 50);
+	                lquantity.setBounds(50, 510, 150, 50);
 	                
 	                tfquantity = new JTextField();
 	                f.add(tfquantity);
-	                tfquantity.setBounds(120, 620, 200, 30);
+	                tfquantity.setBounds(120, 520, 200, 30);
 	                
 	                ldate = new JLabel("Date");
 	                f.add(ldate);
-	                ldate.setBounds(50, 640, 150, 50); 
+	                ldate.setBounds(50, 540, 150, 50); 
 	                
 	                tfdate = new JTextField();
 	                f.add(tfdate);
-	                tfdate.setBounds(120, 660, 200, 30);
+	                tfdate.setBounds(120, 560, 200, 30);
 	                
 	                JButton btnSubmit = new JButton("Submit");
 	                f.add(btnSubmit);
-	                btnSubmit.setBounds(120, 695, 200, 30);
+	                btnSubmit.setBounds(120, 595, 200, 30);
 	                
 	                JButton btnCancel = new JButton("Cancel");
 	                f.add(btnCancel);
-	                btnCancel.setBounds(120, 730, 200, 30);
+	                btnCancel.setBounds(120, 630, 200, 30);
 	                
 	                TableModel model = jtEmp.getModel();
 	                int book_id = (int) model.getValueAt(row, 0);
