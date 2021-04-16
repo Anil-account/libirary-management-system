@@ -24,7 +24,7 @@ public class Mergsort {
         int i = 0, j = 0;
  
         // Initial index of merged subarry array
-        int k = left;
+        int k = left; 
         while (i < n1 && j < n2) {
             String string_at_i = (String) left_arr[i][index];
             

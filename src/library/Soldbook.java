@@ -64,7 +64,7 @@ public class Soldbook {
         
         f.setLayout(null);
         f.setVisible(true); 
-        f.setSize(1280, 800);
+        f.setSize(900,600);
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
     
